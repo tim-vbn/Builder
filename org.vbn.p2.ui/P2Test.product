@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pde version="3.5"?>
+
+<product name="P2 Test Product" uid="org.vbn.p2.product" id="org.vbn.p2.product" application="org.vbn.p2.ui.Application" version="1.0.0.qualifier" useFeatures="true" includeLaunchers="true">
+
+   <configIni use="default">
+   </configIni>
+
+   <launcherArgs>
+      <vmArgsMac>-XstartOnFirstThread -Dorg.eclipse.swt.internal.carbon.smallFonts</vmArgsMac>
+   </launcherArgs>
+
+   <launcher name="P2Test">
+      <solaris/>
+      <win useIco="false">
+         <bmp/>
+      </win>
+   </launcher>
+
+   <vm>
+   </vm>
+
+   <plugins>
+   </plugins>
+
+   <features>
+      <feature id="org.eclipse.rcp" version="3.6.0.v20100519-9OArFKvFtsd7WLUKh-DcYTS"/>
+      <feature id="feature.p2.autoupdate" version="1.0.0.qualifier"/>
+      <feature id="org.vbn.p2.feature" version="1.0.0.qualifier"/>
+   </features>
+
+   <configurations>
+      <plugin id="org.eclipse.equinox.ds" autoStart="true" startLevel="0" />
+      <plugin id="org.eclipse.equinox.p2.autoupdate" autoStart="true" startLevel="5" />
+   </configurations>
+
+</product>

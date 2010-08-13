@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         id="org.vbn.p2.product"
+         point="org.eclipse.core.runtime.products">
+      <product
+            application="org.vbn.p2.ui.Application"
+            name="org.vbn.p2.product">
+      </product>
+   </extension>
+   <extension
+         id="org.vbn.p2.ui.Application"
+         point="org.eclipse.core.runtime.applications">
+      <application
+            cardinality="singleton-global"
+            thread="main"
+            visible="true">
+         <run
+               class="org.vbn.p2.ui.Application">
+         </run>
+      </application>
+   </extension>
+
+</plugin>
