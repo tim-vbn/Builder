@@ -9,7 +9,7 @@ public class LabelTwo extends JPanel
 {
 	public LabelTwo()
 	{
-		JLabel label = new JLabel("Two: version 1.2.3.b");
+		JLabel label = new JLabel("Two: version 1.0");
 		label.setFont(label.getFont().deriveFont(Font.BOLD,24));
 		label.setHorizontalAlignment(SwingConstants.CENTER);
 		label.setVerticalAlignment(SwingConstants.CENTER);

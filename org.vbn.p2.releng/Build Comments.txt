@@ -6,3 +6,42 @@ archivePrefix=LIVE
 configs=win32, win32, x86
 buildId=P2TestBuild
 base=${user.home}
+
+
+p2.gathering=true
+
+
+baseos=linux
+basews=gtk
+
+
+
+
+
+
+
+java -jar /home/builder/eclipse/plugins/org.eclipse.equinox.launcher_1.1.0.v20100507.jar -application org.eclipse.ant.core.antRunner -buildfile /home/builder/eclipse/plugins/org.eclipse.pde.build_3.6.0.v20100603/scripts/productBuild/productBuild.xml -Dbuilder=/home/builder/buildDirectory/plugins/org.vbn.p2.releng/
+
+
+
+
+
+
+
+Build Director Setup Commands
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+rm -R features
+rm -R plugins
+mkdir features
+mkdir plugins
+
+cp -R ~/code/Builder/org.vbn.p2.ui plugins
+cp -R ~/code/Builder/org.vbn.p2.one plugins
+cp -R ~/code/Builder/org.vbn.p2.two plugins
+cp -R ~/code/Builder/org.vbn.p2.three plugins
+cp -R ~/code/Builder/org.vbn.p2.four plugins
+cp -R ~/code/Builder/org.vbn.p2.releng plugins
+cp -R ~/code/Builder/org.eclipse.equinox.p2.autoupdate plugins
+
+cp -R ~/code/Builder/org.vbn.p2.feature features
+cp -R ~/code/Builder/feature.p2.autoupdate features
