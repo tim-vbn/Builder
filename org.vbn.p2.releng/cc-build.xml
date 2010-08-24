@@ -20,11 +20,11 @@
 				<include name="**/*feature*/*" />
 			</fileset>
 		</copy>
-<!-- 		
+
 		<exec executable="sh" >
 			<arg value="${sourceDir}/org.vbn.p2.releng/build.sh"/>
 		</exec>
--->
+
 	</target>
 
 </project>
