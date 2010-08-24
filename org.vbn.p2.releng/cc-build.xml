@@ -11,20 +11,20 @@
 		<mkdir dir="${buildDir}/features" />
 		<copy todir="${buildDir}/plugins">
 			<fileset dir="${sourceDir}">
-				<include name="*" />
-				<exclude name="*feature*" />
+				<include name="**/*/*" />
+				<exclude name="**/*feature*/*" />
 			</fileset>
 		</copy>
 		<copy todir="${buildDir}/features">
 			<fileset dir="${sourceDir}">
-				<include name="*feature*" />
+				<include name="**/*feature*/*" />
 			</fileset>
 		</copy>
-		
+<!-- 		
 		<exec executable="sh" >
 			<arg value="${sourceDir}/org.vbn.p2.releng/build.sh"/>
 		</exec>
-		
+-->
 	</target>
 
 </project>
