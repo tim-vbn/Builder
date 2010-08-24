@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="P2Test Build" default="build" basedir=".">
+
+	<property name="sourceDir" location="/home/builder/code/Builder" />
+	<property name="buildDir" location="/home/builder/buildDirectory" />
+
+	<target name="build">
+		<delete dir="${buildDir}" />
+		<mkdir dir="${buildDir}" />
+		<mkdir dir="${buildDir}/plugins" />
+		<mkdir dir="${buildDir}/features" />
+		<copy todir="${buildDir}/plugins">
+			<fileset dir="${sourceDir}">
+				<include name="*" />
+				<exclude name="*feature*" />
+			</fileset>
+		</copy>
+		<copy todir="${buildDir}/features">
+			<fileset dir="${sourceDir}">
+				<include name="*feature*" />
+			</fileset>
+		</copy>
+		
+		<exec command="sh" workingdir="${sourceDir}/org.vbn.p2.releng/" args="build.sh"/>
+		
+	</target>
+
+</project>
+
+
