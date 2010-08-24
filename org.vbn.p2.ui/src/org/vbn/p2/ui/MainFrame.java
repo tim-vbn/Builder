@@ -16,7 +16,7 @@ public class MainFrame extends JFrame implements WindowListener
 
 	public MainFrame()
 	{
-		super("P2 Auto Update Test");
+		super("P2 Auto Update and Automatic Build Test");
 		
 		try
 		{
