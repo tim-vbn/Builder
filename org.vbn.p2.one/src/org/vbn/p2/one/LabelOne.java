@@ -9,7 +9,7 @@ public class LabelOne extends JPanel
 {
 	public LabelOne()
 	{
-		JLabel label = new JLabel("One: version 1.4");
+		JLabel label = new JLabel("One: version 1.5");
 		label.setFont(label.getFont().deriveFont(Font.BOLD,24));
 		label.setHorizontalAlignment(SwingConstants.CENTER);
 		label.setVerticalAlignment(SwingConstants.CENTER);
