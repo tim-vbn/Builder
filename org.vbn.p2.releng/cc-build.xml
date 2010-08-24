@@ -21,7 +21,9 @@
 			</fileset>
 		</copy>
 		
-		<exec command="sh" workingdir="${sourceDir}/org.vbn.p2.releng/" args="build.sh"/>
+		<exec executable="sh" >
+			<arg value="${sourceDir}/org.vbn.p2.releng/build.sh"/>
+		</exec>
 		
 	</target>
 
