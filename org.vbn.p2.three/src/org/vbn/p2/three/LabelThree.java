@@ -9,7 +9,7 @@ public class LabelThree extends JPanel
 {
 	public LabelThree()
 	{
-		JLabel label = new JLabel("Three: version 1.0");
+		JLabel label = new JLabel("Three: Checked in changes!");
 		label.setFont(label.getFont().deriveFont(Font.BOLD,24));
 		label.setHorizontalAlignment(SwingConstants.CENTER);
 		label.setVerticalAlignment(SwingConstants.CENTER);
